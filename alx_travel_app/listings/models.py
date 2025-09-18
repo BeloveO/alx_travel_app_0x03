@@ -65,6 +65,7 @@ class Listing(models.Model):
         return self.title
 
 # Review model
+# Note: Each listing can have multiple reviews, but each review is linked to one listing and one user. Only users who have booked a listing can leave a review.
 class Review(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     listing = models.ForeignKey(Listing, related_name='reviews', on_delete=models.CASCADE)
