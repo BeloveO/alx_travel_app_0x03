@@ -37,6 +37,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'listings',           # Our custom app
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -46,7 +47,9 @@ INSTALLED_APPS = [
     'rest_framework',           # Django REST framework
     'corsheaders',              # CORS headers
     'drf_yasg',                 # Swagger for API documentation
-    'listings',                 # Your listings app
+    'django_extensions',        # Django Extensions
+    'django_seed',              # Django Seed for seeding database
+    'faker',                    # Faker for generating fake data
 ]
 
 MIDDLEWARE = [
@@ -150,3 +153,4 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+AUTH_USER_MODEL = 'listings.User'  # Custom user model
