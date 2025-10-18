@@ -1,6 +1,6 @@
 # Serializers for Listing and Booking models
 from rest_framework import serializers
-from .models import Listing, Booking, Review, User
+from .models import Listing, Booking, Review, User, Payment
 
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
@@ -15,7 +15,7 @@ class ListingSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Listing
-        fields = ['id', 'host', 'title', 'listing_image', 'description', 'description_image', 'property_type', 'amenities', 'address', 'price_per_night', 'created_at', 'reviews']
+        fields = ['host_id', 'host', 'title', 'listing_image', 'description', 'description_image', 'property_type', 'amenities', 'address', 'price_per_night', 'created_at', 'reviews']
         read_only_fields = ['id', 'created_at', 'reviews']
 
 #Serializer for the Booking model
@@ -27,5 +27,18 @@ class BookingSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Booking
-        fields = ['id', 'user', 'listing', 'start_date', 'end_date', 'total_price', 'created_at']
+        fields = ['id', 'listing_id', 'user_id', 'user', 'listing', 'start_date', 'end_date', 'total_price', 'created_at']
         read_only_fields = ['id', 'created_at']
+
+
+class PaymentSerializer(serializers.ModelSerializer):
+    booking_reference = serializers.CharField(source='booking.id', read_only=True)
+    property_title = serializers.CharField(source='booking.listing.title', read_only=True)
+    
+    class Meta:
+        model = Payment
+        fields = [
+            'id', 'transaction_id', 'amount', 'currency', 'status',
+            'booking_reference', 'property_title', 'created_at', 'paid_at'
+        ]
+        read_only_fields = ['id', 'created_at', 'paid_at']

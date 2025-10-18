@@ -89,3 +89,33 @@ class Booking(models.Model):
 
     def __str__(self):
         return f'Booking by {self.user} for {self.listing.title} from {self.start_date} to {self.end_date}'
+    
+# Payment model
+class Payment(models.Model):
+    PAYMENT_STATUS = [
+        ('pending', 'Pending'),
+        ('completed', 'Completed'),
+        ('failed', 'Failed'),
+        ('canceled', 'Canceled'),
+    ]
+    booking = models.OneToOneField(Booking, on_delete=models.CASCADE, related_name="payment")
+    transaction_id = models.CharField(max_length=100, unique=True)
+    amount = models.DecimalField(max_digits=10, decimal_places=2)
+    currency = models.CharField(max_length=3, default="NGN")
+    status = models.CharField(max_length=20, choices=PAYMENT_STATUS, default='pending')
+    chapa_reference = models.CharField(max_length=100, blank=True, null=True)
+    payment_method = models.CharField(max_length=50, blank=True, null=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+    paid_at = models.DateTimeField(blank=True, null=True)
+    
+    # Additional fields for tracking
+    initiation_response = models.JSONField(blank=True, null=True)
+    verification_response = models.JSONField(blank=True, null=True)
+    
+    def __str__(self):
+        return f"Payment {self.transaction_id} - {self.status}"
+    
+    class Meta:
+        ordering = ['-created_at']
+
