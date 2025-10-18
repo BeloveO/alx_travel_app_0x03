@@ -4,7 +4,6 @@ import logging
 from django.conf import settings
 from django.urls import reverse
 
-# Get logger for payments
 logger = logging.getLogger('chapa_payment')
 
 class ChapaService:
@@ -15,12 +14,19 @@ class ChapaService:
             'Authorization': f'Bearer {self.secret_key}',
             'Content-Type': 'application/json'
         }
-        logger.info("ChapaService initialized")
+        
+        # Log initialization (but hide full secret key)
+        masked_key = self.secret_key[:8] + '...' + self.secret_key[-4:] if self.secret_key else 'None'
+        logger.info(f"ChapaService initialized", extra={
+            'base_url': self.base_url,
+            'secret_key_masked': masked_key,
+            'action': 'chapa_service_init'
+        })
     
     def initiate_payment(self, amount, email, first_name, last_name, tx_ref, 
                        return_url, currency='ETB', custom_title=None, custom_description=None):
         """
-        Initiate payment with Chapa API
+        Initiate payment with Chapa API - Enhanced debugging
         """
         url = f"{self.base_url}/transaction/initialize"
         
@@ -38,32 +44,46 @@ class ChapaService:
             }
         }
         
-        # Log payment initiation attempt
-        logger.info(f"🔗 Initiating Chapa payment", extra={
+        # Enhanced logging
+        logger.info("🔗 Initiating Chapa payment with details:", extra={
             'transaction_id': tx_ref,
             'amount': amount,
             'currency': currency,
             'email': email,
-            'action': 'payment_initiation'
+            'first_name': first_name,
+            'last_name': last_name,
+            'return_url': return_url,
+            'chapa_url': url,
+            'action': 'payment_initiation_start'
         })
         
-        logger.debug(f"Chapa API Request Details", extra={
-            'url': url,
+        logger.debug("Chapa API Request Payload:", extra={
             'payload': payload,
-            'transaction_id': tx_ref
+            'headers': {k: '***' if 'Authorization' in k else v for k, v in self.headers.items()},
+            'action': 'chapa_request_details'
         })
         
         try:
-            response = requests.post(url, json=payload, headers=self.headers)
+            response = requests.post(url, json=payload, headers=self.headers, timeout=30)
+            
+            # Log the raw response for debugging
+            logger.debug("Chapa API Raw Response:", extra={
+                'status_code': response.status_code,
+                'headers': dict(response.headers),
+                'response_text': response.text,
+                'action': 'chapa_raw_response'
+            })
+            
             response.raise_for_status()
             
             data = response.json()
             
             # Log successful initiation
-            logger.info(f"✅ Chapa payment initiated successfully", extra={
+            logger.info("✅ Chapa payment initiated successfully", extra={
                 'transaction_id': tx_ref,
-                'checkout_url': data['data']['checkout_url'],
-                'status': data['data']['status'],
+                'checkout_url': data.get('data', {}).get('checkout_url'),
+                'status': data.get('data', {}).get('status'),
+                'chapa_message': data.get('message'),
                 'action': 'payment_initiation_success'
             })
             
@@ -75,72 +95,39 @@ class ChapaService:
             }
             
         except requests.exceptions.RequestException as e:
-            # Log initiation failure
-            logger.error(f"❌ Chapa payment initiation failed", extra={
+            # Enhanced error logging
+            error_details = {
+                'transaction_id': tx_ref,
+                'error_type': type(e).__name__,
+                'error_message': str(e),
+                'action': 'payment_initiation_failed'
+            }
+            
+            # Add response details if available
+            if hasattr(e, 'response') and e.response is not None:
+                error_details.update({
+                    'response_status': e.response.status_code,
+                    'response_headers': dict(e.response.headers),
+                    'response_body': e.response.text
+                })
+            
+            logger.error("❌ Chapa payment initiation failed with details:", extra=error_details)
+            
+            return {
+                'success': False,
+                'error': str(e),
+                'message': 'Failed to initiate payment with Chapa'
+            }
+        except Exception as e:
+            logger.error("❌ Unexpected error in Chapa payment initiation:", extra={
                 'transaction_id': tx_ref,
                 'error': str(e),
-                'response_status': getattr(e.response, 'status_code', None),
-                'response_text': getattr(e.response, 'text', ''),
-                'action': 'payment_initiation_failed'
+                'error_type': type(e).__name__,
+                'action': 'payment_initiation_unexpected_error'
             })
             
             return {
                 'success': False,
                 'error': str(e),
-                'message': 'Failed to initiate payment'
-            }
-    
-    def verify_payment(self, transaction_id):
-        """
-        Verify payment status with Chapa API
-        """
-        url = f"{self.base_url}/transaction/verify/{transaction_id}"
-        
-        # Log verification attempt
-        logger.info(f"🔍 Verifying Chapa payment", extra={
-            'transaction_id': transaction_id,
-            'action': 'payment_verification'
-        })
-        
-        try:
-            response = requests.get(url, headers=self.headers)
-            response.raise_for_status()
-            
-            data = response.json()
-            
-            # Log verification result
-            logger.info(f"📊 Chapa payment verification completed", extra={
-                'transaction_id': transaction_id,
-                'status': data['data']['status'],
-                'amount': data['data']['amount'],
-                'currency': data['data']['currency'],
-                'action': 'payment_verification_success'
-            })
-            
-            logger.debug(f"Chapa verification response", extra={
-                'transaction_id': transaction_id,
-                'full_response': data,
-                'action': 'payment_verification_details'
-            })
-            
-            return {
-                'success': True,
-                'status': data['data']['status'],
-                'payment_data': data['data'],
-                'response_data': data
-            }
-            
-        except requests.exceptions.RequestException as e:
-            # Log verification failure
-            logger.error(f"❌ Chapa payment verification failed", extra={
-                'transaction_id': transaction_id,
-                'error': str(e),
-                'response_status': getattr(e.response, 'status_code', None),
-                'action': 'payment_verification_failed'
-            })
-            
-            return {
-                'success': False,
-                'error': str(e),
-                'message': 'Failed to verify payment'
+                'message': 'Unexpected error during payment initiation'
             }

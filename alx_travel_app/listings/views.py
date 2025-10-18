@@ -1,25 +1,24 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from rest_framework import viewsets, status
 from .models import Listing, Booking, User, Payment
 from rest_framework.response import Response
-from .serializers import ListingSerializer, BookingSerializer, PaymentSerializer
+from .serializers import ListingSerializer, BookingSerializer, PaymentSerializer, PaymentInitiationSerializer
 from rest_framework.filters import SearchFilter, OrderingFilter
 from django_filters.rest_framework import DjangoFilterBackend
-from rest_framework.decorators import action
+from rest_framework.decorators import action, api_view, permission_classes
 from django.db.models import Avg
-from rest_framework import status
-from rest_framework.decorators import api_view, permission_classes
 from rest_framework.permissions import IsAuthenticated
-from rest_framework.response import Response
-from django.shortcuts import get_object_or_404
 from django.conf import settings
 from django.urls import reverse
 from .chapa_service import ChapaService
 from django.utils import timezone
+from django.utils.decorators import method_decorator
+from django.views.decorators.csrf import csrf_exempt
+from rest_framework.views import APIView
 import logging
 import uuid
 
-logger = logging.getLogger('payments')
+logger = logging.getLogger('chapa_payment')
 
 # Create your views here.
 class ListingViewSet(viewsets.ModelViewSet):
@@ -162,311 +161,386 @@ class BookingViewSet(viewsets.ModelViewSet):
             return Response({'error': 'You do not have permission to confirm this booking.'}, status=403)
         # Here you can add logic to mark the booking as confirmed
         return Response({'status': 'Booking confirmed'}, status=200)
+    
+    @action(detail=True, methods=['post'])
+    def initiate_payment(self, request, pk=None):
+        """
+        Initiate payment for this booking
+        """
+        booking = self.get_object()
+        
+        # Check if booking belongs to user
+        if booking.user != request.user and not request.user.is_staff:
+            return Response(
+                {'error': 'You do not have permission to pay for this booking.'},
+                status=status.HTTP_403_FORBIDDEN
+            )
+        
+        # Check if payment already exists
+        if hasattr(booking, 'payment'):
+            return Response(
+                {'error': 'Payment already exists for this booking.'},
+                status=status.HTTP_400_BAD_REQUEST
+            )
+        return Response({
+            'message': 'Use the /api/payments/ endpoint to create payment for this booking.'
+        })
+
 
 class PaymentViewSet(viewsets.ModelViewSet):
     queryset = Payment.objects.all()
     serializer_class = PaymentSerializer
-    @api_view(['POST'])
-    @permission_classes([IsAuthenticated])
-    def initiate_payment(request, booking_id):
+    permission_classes = [IsAuthenticated]
+    lookup_field = 'id'  # Use UUID as lookup field
+    
+    def get_queryset(self):
         """
-        Initiate payment for a booking
+        Users can only see payments for their own bookings unless they are staff
         """
-        logger.info("🎬 Payment initiation request received", extra={
-            'booking_id': booking_id,
-            'user': request.user.email,
-            'action': 'initiate_payment_request'
+        user = self.request.user
+        queryset = Payment.objects.select_related('booking', 'booking__user', 'booking__listing').all()
+        
+        if not user.is_staff:
+            queryset = queryset.filter(booking__user=user)
+        
+        return queryset
+    
+    def create(self, request, *args, **kwargs):
+        """
+        Create a payment for a booking - Updated for UUID
+        """
+        serializer = PaymentInitiationSerializer(data=request.data, context={'request': request})
+        serializer.is_valid(raise_exception=True)
+        
+        booking_id = serializer.validated_data['booking_id']
+        
+        try:
+            # Get the booking using UUID
+            booking = get_object_or_404(Booking, id=booking_id)
+            
+            logger.info("Processing payment for booking", extra={
+                'booking_id': str(booking_id),
+                'user': request.user.email,
+                'action': 'payment_processing_start'
+            })
+            
+            # Generate unique transaction reference with UUID
+            transaction_id = f"txn_{uuid.uuid4().hex[:10]}_{booking_id.hex[:8]}"
+            
+            # Prepare return URL
+            return_url = request.build_absolute_uri(
+                reverse('payment-success')
+            ) + f"?booking={booking_id}"
+            
+            # Initialize Chapa service
+            chapa = ChapaService()
+            
+            # Get user details
+            user = booking.user
+            first_name = user.first_name or 'Customer'
+            last_name = user.last_name or 'User'
+            
+            # Log payment details
+            logger.info("Payment details", extra={
+                'booking_id': str(booking_id),
+                'amount': float(booking.total_price),
+                'user_email': user.email,
+                'transaction_id': transaction_id,
+                'action': 'payment_details'
+            })
+            
+            # Initiate payment with Chapa
+            payment_result = chapa.initiate_payment(
+                amount=float(booking.total_price),
+                email=user.email,
+                first_name=first_name,
+                last_name=last_name,
+                tx_ref=transaction_id,
+                return_url=return_url,
+                custom_title=f"Payment for {booking.listing.title}",
+                custom_description=f"Booking reference: {booking_id}"
+            )
+            
+            if not payment_result['success']:
+                logger.error("Payment initiation failed", extra={
+                    'booking_id': str(booking_id),
+                    'error': payment_result.get('message'),
+                    'action': 'payment_initiation_failed'
+                })
+                return Response(
+                    {'error': payment_result['message']},
+                    status=status.HTTP_400_BAD_REQUEST
+                )
+            
+            # Create payment record
+            payment = Payment.objects.create(
+                booking=booking,
+                transaction_id=transaction_id,
+                amount=booking.total_price,
+                status='pending',
+                chapa_reference=transaction_id,
+                initiation_response=payment_result.get('response_data')
+            )
+            
+            logger.info("Payment record created successfully", extra={
+                'payment_id': str(payment.id),
+                'booking_id': str(booking_id),
+                'transaction_id': transaction_id,
+                'action': 'payment_created'
+            })
+            
+            # Serialize the response
+            response_serializer = PaymentSerializer(payment)
+            
+            return Response({
+                'success': True,
+                'payment': response_serializer.data,
+                'checkout_url': payment_result['checkout_url'],
+                'message': 'Payment initiated successfully. Redirect to checkout URL to complete payment.'
+            }, status=status.HTTP_201_CREATED)
+            
+        except Exception as e:
+            logger.error("Unexpected error in payment creation", extra={
+                'booking_id': str(booking_id),
+                'error': str(e),
+                'action': 'payment_creation_error'
+            })
+            return Response(
+                {'error': f'An unexpected error occurred: {str(e)}'},
+                status=status.HTTP_500_INTERNAL_SERVER_ERROR
+            )
+    
+    @action(detail=True, methods=['post'])
+    def retry_payment(self, request, id=None):  # Changed pk to id for UUID
+        """
+        Retry payment for a failed payment - Updated for UUID
+        """
+        payment = self.get_object()
+        
+        logger.info("Retrying payment", extra={
+            'payment_id': str(payment.id),
+            'booking_id': str(payment.booking.id),
+            'action': 'payment_retry_start'
         })
         
-        booking = get_object_or_404(Booking, id=booking_id, user=request.user)
-        
-        # Check if payment already exists
-        if hasattr(booking, 'payment'):
-            logger.warning("⚠️ Payment already exists for booking", extra={
-                'booking_id': booking_id,
-                'booking_reference': booking.reference,
-                'action': 'payment_already_exists'
-            })
-            return Response({
-                'error': 'Payment already initiated for this booking'
-            }, status=status.HTTP_400_BAD_REQUEST)
-        
-        # Generate unique transaction reference
-        transaction_id = f"txn_{uuid.uuid4().hex[:10]}_{booking.reference}"
+        # Generate new transaction ID with UUID
+        new_transaction_id = f"txn_{uuid.uuid4().hex[:10]}_{payment.booking.id.hex[:8]}"
         
         # Prepare return URL
         return_url = request.build_absolute_uri(
-            reverse('payment_success')
-        ) + f"?booking={booking.reference}"
-        
-        # Log booking details
-        logger.info("📋 Booking details for payment", extra={
-            'booking_reference': booking.reference,
-            'property': booking.property.title,
-            'amount': float(booking.total_price),
-            'check_in': booking.check_in.isoformat(),
-            'check_out': booking.check_out.isoformat(),
-            'transaction_id': transaction_id,
-            'action': 'booking_details'
-        })
+            reverse('payment-success')
+        ) + f"?booking={payment.booking.id}"
         
         # Initialize Chapa service
         chapa = ChapaService()
         
-        # Initiate payment
+        # Get user details
+        user = payment.booking.user
+        first_name = user.first_name or 'Customer'
+        last_name = user.last_name or 'User'
+        
+        # Initiate new payment
         payment_result = chapa.initiate_payment(
-            amount=float(booking.total_price),
-            email=request.user.email,
-            first_name=request.user.first_name or 'Customer',
-            last_name=request.user.last_name or 'User',
-            tx_ref=transaction_id,
+            amount=float(payment.amount),
+            email=user.email,
+            first_name=first_name,
+            last_name=last_name,
+            tx_ref=new_transaction_id,
             return_url=return_url,
-            custom_title=f"Payment for {booking.property.title}",
-            custom_description=f"Booking reference: {booking.reference}"
+            custom_title=f"Payment for {payment.booking.listing.title}",
+            custom_description=f"Booking reference: {payment.booking.id}"
         )
         
         if not payment_result['success']:
-            logger.error("💥 Payment initiation failed in view", extra={
-                'booking_id': booking_id,
-                'transaction_id': transaction_id,
+            logger.error("Payment retry failed", extra={
+                'payment_id': str(payment.id),
                 'error': payment_result.get('message'),
-                'action': 'payment_initiation_failed_view'
+                'action': 'payment_retry_failed'
             })
-            return Response({
-                'error': payment_result['message']
-            }, status=status.HTTP_400_BAD_REQUEST)
+            return Response(
+                {'error': payment_result['message']},
+                status=status.HTTP_400_BAD_REQUEST
+            )
         
-        # Create payment record
-        payment = Payment.objects.create(
-            booking=booking,
-            transaction_id=transaction_id,
-            amount=booking.total_price,
-            status='pending',
-            chapa_reference=transaction_id,
-            initiation_response=payment_result.get('response_data')
-        )
+        # Update payment record
+        payment.transaction_id = new_transaction_id
+        payment.status = 'pending'
+        payment.chapa_reference = new_transaction_id
+        payment.initiation_response = payment_result.get('response_data')
+        payment.verification_response = None
+        payment.paid_at = None
+        payment.save()
         
-        logger.info("💰 Payment record created successfully", extra={
-            'payment_id': payment.id,
-            'transaction_id': transaction_id,
-            'booking_reference': booking.reference,
-            'status': 'pending',
-            'action': 'payment_record_created'
+        logger.info("Payment retry successful", extra={
+            'payment_id': str(payment.id),
+            'new_transaction_id': new_transaction_id,
+            'action': 'payment_retry_success'
         })
         
         return Response({
             'success': True,
             'checkout_url': payment_result['checkout_url'],
+            'transaction_id': new_transaction_id,
+            'message': 'Payment retry initiated successfully. Redirect to checkout URL.'
+        })
+    
+    @action(detail=False, methods=['get'])
+    def status(self, request):
+        """
+        Get payment status by transaction ID or booking ID - Updated for UUID
+        """
+        transaction_id = request.query_params.get('transaction_id')
+        booking_id = request.query_params.get('booking_id')
+        
+        logger.info("Payment status check", extra={
             'transaction_id': transaction_id,
-            'message': 'Payment initiated successfully. Redirect to checkout URL.'
-        })
-
-    @api_view(['GET'])
-    @permission_classes([IsAuthenticated])
-    def verify_payment(request):
-        """
-        Verify payment status
-        """
-        transaction_id = request.GET.get('transaction_id')
-        booking_reference = request.GET.get('booking')
-        
-        if not transaction_id and not booking_reference:
-            return Response({
-                'error': 'Transaction ID or booking reference required'
-            }, status=status.HTTP_400_BAD_REQUEST)
-        
-        # Find payment
-        if transaction_id:
-            payment = get_object_or_404(Payment, transaction_id=transaction_id)
-        else:
-            booking = get_object_or_404(Booking, reference=booking_reference)
-            payment = get_object_or_404(Payment, booking=booking)
-        
-        # Verify payment with Chapa
-        chapa = ChapaService()
-        verification_result = chapa.verify_payment(payment.transaction_id)
-        
-        if not verification_result['success']:
-            return Response({
-                'error': verification_result['message']
-            }, status=status.HTTP_400_BAD_REQUEST)
-        
-        # Update payment status
-        chapa_status = verification_result['status']
-        if chapa_status == 'success':
-            payment.status = 'completed'
-            payment.paid_at = timezone.now()
-            payment.verification_response = verification_result.get('response_data')
-            payment.save()
-            
-            # Update booking status
-            payment.booking.status = 'confirmed'
-            payment.booking.save()
-            
-            # Send confirmation email
-            from .tasks import send_booking_confirmation
-            send_booking_confirmation.delay(payment.booking.id)
-            
-            return Response({
-                'success': True,
-                'status': 'completed',
-                'message': 'Payment verified successfully'
-            })
-        
-        elif chapa_status in ['failed', 'cancelled']:
-            payment.status = 'failed'
-            payment.verification_response = verification_result.get('response_data')
-            payment.save()
-            
-            return Response({
-                'success': False,
-                'status': 'failed',
-                'message': 'Payment failed or was cancelled'
-            })
-        
-        else:
-            return Response({
-                'success': False,
-                'status': 'pending',
-                'message': 'Payment is still pending'
-            })
-
-
-    @api_view(['POST'])
-    def chapa_webhook(request):
-        """
-        Handle Chapa webhook for payment notifications
-        """
-        logger.info("📨 Chapa webhook received", extra={
-            'remote_ip': request.META.get('REMOTE_ADDR'),
-            'user_agent': request.META.get('HTTP_USER_AGENT'),
-            'action': 'webhook_received'
+            'booking_id': booking_id,
+            'action': 'payment_status_check'
         })
         
-        # Verify webhook signature (implement based on Chapa documentation)
-        webhook_secret = settings.CHAPA_WEBHOOK_SECRET
+        if not transaction_id and not booking_id:
+            return Response(
+                {'error': 'Either transaction_id or booking_id is required.'},
+                status=status.HTTP_400_BAD_REQUEST
+            )
         
-        # Extract transaction ID from webhook data
-        webhook_data = request.data
-        transaction_id = webhook_data.get('tx_ref')
-        event_type = webhook_data.get('event')
-        
-        logger.info("🔍 Processing webhook data", extra={
-            'transaction_id': transaction_id,
-            'event_type': event_type,
-            'webhook_data': webhook_data,
-            'action': 'webhook_processing'
-        })
-        
-        if not transaction_id:
-            logger.error("❌ Webhook missing transaction reference", extra={
-                'webhook_data': webhook_data,
-                'action': 'webhook_missing_tx_ref'
-            })
-            return Response({'error': 'No transaction reference'}, status=400)
-        
-        # Find and update payment
         try:
-            payment = Payment.objects.get(transaction_id=transaction_id)
+            if transaction_id:
+                payment = Payment.objects.get(transaction_id=transaction_id)
+            else:
+                # Convert string booking_id to UUID
+                from django.core.exceptions import ValidationError
+                try:
+                    booking_uuid = uuid.UUID(booking_id)
+                    booking = Booking.objects.get(id=booking_uuid)
+                    payment = Payment.objects.get(booking=booking)
+                except (ValueError, ValidationError):
+                    return Response(
+                        {'error': 'Invalid booking ID format.'},
+                        status=status.HTTP_400_BAD_REQUEST
+                    )
             
-            logger.info("🔍 Payment found for webhook", extra={
+            # Check permissions
+            if payment.booking.user != request.user and not request.user.is_staff:
+                return Response(
+                    {'error': 'You do not have permission to view this payment.'},
+                    status=status.HTTP_403_FORBIDDEN
+                )
+            
+            serializer = self.get_serializer(payment)
+            return Response(serializer.data)
+            
+        except (Payment.DoesNotExist, Booking.DoesNotExist):
+            return Response(
+                {'error': 'Payment not found.'},
+                status=status.HTTP_404_NOT_FOUND
+            )
+
+
+@method_decorator(csrf_exempt, name='dispatch')
+class ChapaWebhookView(APIView):
+    """
+    Handle Chapa webhook for payment notifications
+    """
+    authentication_classes = []  # No authentication for webhooks
+    permission_classes = []
+    
+    def post(self, request):
+        try:
+            webhook_data = request.data
+            transaction_id = webhook_data.get('tx_ref')
+            event_type = webhook_data.get('event')
+            
+            logger.info("Webhook received", extra={
                 'transaction_id': transaction_id,
-                'payment_id': payment.id,
-                'current_status': payment.status,
-                'action': 'payment_found_webhook'
+                'event_type': event_type,
+                'action': 'webhook_received'
             })
             
-            chapa = ChapaService()
-            verification_result = chapa.verify_payment(transaction_id)
+            if not transaction_id:
+                logger.error("Webhook missing transaction reference", extra={
+                    'action': 'webhook_missing_tx_ref'
+                })
+                return Response({'error': 'No transaction reference'}, status=400)
             
-            if verification_result['success']:
-                chapa_status = verification_result['status']
+            # Find payment
+            try:
+                payment = Payment.objects.get(transaction_id=transaction_id)
                 
-                if chapa_status == 'success':
-                    payment.status = 'completed'
-                    payment.paid_at = timezone.now()
-                    payment.booking.status = 'confirmed'
-                    payment.booking.save()
-                    payment.verification_response = verification_result.get('response_data')
-                    payment.save()
-                    
-                    logger.info("🎉 Payment completed via webhook", extra={
-                        'transaction_id': transaction_id,
-                        'payment_id': payment.id,
-                        'booking_reference': payment.booking.reference,
-                        'amount': float(payment.amount),
-                        'action': 'payment_completed_webhook'
-                    })
-                    
-                    # Send confirmation email
-                    from .tasks import send_booking_confirmation
-                    send_booking_confirmation.delay(payment.booking.id)
-                    
-                    logger.info("📧 Booking confirmation email triggered", extra={
-                        'booking_id': payment.booking.id,
-                        'action': 'email_triggered'
-                    })
+                # Verify payment with Chapa
+                chapa = ChapaService()
+                verification_result = chapa.verify_payment(transaction_id)
                 
-                elif chapa_status in ['failed', 'cancelled']:
-                    payment.status = 'failed'
-                    payment.verification_response = verification_result.get('response_data')
-                    payment.save()
+                if verification_result['success']:
+                    chapa_status = verification_result['status']
                     
-                    logger.warning("⚠️ Payment failed via webhook", extra={
-                        'transaction_id': transaction_id,
-                        'status': chapa_status,
-                        'action': 'payment_failed_webhook'
-                    })
+                    if chapa_status == 'success':
+                        payment.status = 'completed'
+                        payment.paid_at = timezone.now()
+                        payment.booking.status = 'confirmed'
+                        payment.booking.save()
+                        payment.verification_response = verification_result.get('response_data')
+                        payment.save()
+                        
+                        logger.info("Payment completed via webhook", extra={
+                            'payment_id': payment.id,
+                            'booking_id': payment.booking.id,
+                            'action': 'payment_completed_webhook'
+                        })
+                    
+                    elif chapa_status in ['failed', 'cancelled']:
+                        payment.status = 'failed'
+                        payment.verification_response = verification_result.get('response_data')
+                        payment.save()
+                        
+                        logger.warning("Payment failed via webhook", extra={
+                            'payment_id': payment.id,
+                            'status': chapa_status,
+                            'action': 'payment_failed_webhook'
+                        })
                 
                 else:
-                    logger.info("⏳ Payment still pending via webhook", extra={
+                    logger.error("Payment verification failed in webhook", extra={
                         'transaction_id': transaction_id,
-                        'status': chapa_status,
-                        'action': 'payment_pending_webhook'
+                        'error': verification_result.get('message'),
+                        'action': 'verification_failed_webhook'
                     })
             
-            else:
-                logger.error("❌ Payment verification failed in webhook", extra={
+            except Payment.DoesNotExist:
+                logger.error("Payment not found for webhook", extra={
                     'transaction_id': transaction_id,
-                    'error': verification_result.get('message'),
-                    'action': 'verification_failed_webhook'
+                    'action': 'payment_not_found_webhook'
                 })
-        
-        except Payment.DoesNotExist:
-            logger.error("❌ Payment not found for webhook", extra={
-                'transaction_id': transaction_id,
-                'action': 'payment_not_found_webhook'
-            })
-            return Response({'error': 'Payment not found'}, status=404)
-        
+                return Response({'error': 'Payment not found'}, status=404)
+            
+            return Response({'status': 'webhook processed'})
+            
         except Exception as e:
-            logger.error("💥 Unexpected error in webhook processing", extra={
-                'transaction_id': transaction_id,
+            logger.error("Unexpected error in webhook processing", extra={
                 'error': str(e),
                 'action': 'webhook_processing_error'
             })
             return Response({'error': 'Internal server error'}, status=500)
-        
-        logger.info("✅ Webhook processed successfully", extra={
-            'transaction_id': transaction_id,
-            'action': 'webhook_processed'
-        })
-        
-        return Response({'status': 'webhook processed'})
 
-    @api_view(['GET'])
-    @permission_classes([IsAuthenticated])
-    def payment_success(request):
-        """
-        Success page after payment completion
-        """
-        booking_reference = request.GET.get('booking')
+class PaymentSuccessView(APIView):
+    """
+    Success page after payment completion
+    """
+    def get(self, request):
+        booking_id = request.GET.get('booking')
         transaction_id = request.GET.get('transaction_id')
         
         context = {
-            'booking_reference': booking_reference,
-            'transaction_id': transaction_id,
-            'message': 'Payment completed successfully!'
+            'success': True,
+            'message': 'Payment completed successfully!',
+            'booking_id': booking_id,
+            'transaction_id': transaction_id
         }
+        
+        logger.info("Payment success page accessed", extra={
+            'booking_id': booking_id,
+            'transaction_id': transaction_id,
+            'action': 'payment_success_page'
+        })
         
         return Response(context)

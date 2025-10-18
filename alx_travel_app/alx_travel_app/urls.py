@@ -19,6 +19,27 @@ from django.urls import path, include
 from rest_framework import permissions
 from drf_yasg.views import get_schema_view
 from drf_yasg import openapi
+from django.http import HttpResponse
+
+def test_logging(request):
+    """Test endpoint to verify logging is working"""
+    payments_logger = logging.getLogger('payments')
+    
+    # Test different log levels
+    payments_logger.debug("DEBUG test message")
+    payments_logger.info("INFO test message")
+    payments_logger.warning("WARNING test message")
+    payments_logger.error("ERROR test message")
+    payments_logger.critical("CRITICAL test message")
+    
+    # Test with extra context
+    payments_logger.info("Payment test with context", extra={
+        'transaction_id': 'test_123',
+        'action': 'log_test',
+        'user': 'test_user'
+    })
+    
+    return HttpResponse("Log test completed. Check your log files.")
 
 schema_view = get_schema_view(
    openapi.Info(
@@ -37,3 +58,6 @@ urlpatterns = [
     path('swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
     path('redoc/', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),
 ]
+
+import logging
+

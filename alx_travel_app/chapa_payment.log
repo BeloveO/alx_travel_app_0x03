@@ -1,0 +1,45 @@
+INFO 2025-10-18 13:55:53,476 autoreload 53583 7999561408 Watching for file changes with StatReloader
+INFO 2025-10-18 13:57:07,885 autoreload 53583 7999561408 /Users/beloveolusola/Desktop/alx_travel_app_0x02/alx_travel_app/alx_travel_app/urls.py changed, reloading.
+INFO 2025-10-18 13:57:08,325 autoreload 53638 7999561408 Watching for file changes with StatReloader
+INFO 2025-10-18 13:59:48,799 basehttp 53638 6197096448 "GET /api/payments/ HTTP/1.1" 200 9566
+INFO 2025-10-18 13:59:48,853 basehttp 53638 6197096448 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+INFO 2025-10-18 13:59:48,859 basehttp 53638 6197096448 "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+INFO 2025-10-18 13:59:48,859 basehttp 53638 6230749184 "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+INFO 2025-10-18 13:59:48,859 basehttp 53638 6213922816 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+INFO 2025-10-18 13:59:48,861 basehttp 53638 6247575552 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+INFO 2025-10-18 13:59:48,862 basehttp 53638 6264401920 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+INFO 2025-10-18 13:59:48,862 basehttp 53638 6213922816 "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 304 0
+INFO 2025-10-18 13:59:48,863 basehttp 53638 6230749184 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO 2025-10-18 13:59:48,863 basehttp 53638 6281228288 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+INFO 2025-10-18 13:59:48,864 basehttp 53638 6197096448 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2025-10-18 13:59:48,864 basehttp 53638 6247575552 "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 304 0
+INFO 2025-10-18 13:59:48,893 basehttp 53638 6197096448 "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+ERROR 2025-10-18 13:59:49,596 log 53638 6197096448 Internal Server Error: /api/payments/host_payments/
+django.core.exceptions.FieldError: Cannot resolve keyword 'id' into field. Choices are: amount, booking, booking_id, chapa_reference, created_at, currency, initiation_response, paid_at, payment_method, status, transaction_id, updated_at, verification_response
+ERROR 2025-10-18 13:59:49,600 basehttp 53638 6197096448 "GET /api/payments/host_payments/ HTTP/1.1" 500 155038
+INFO 2025-10-18 13:59:50,055 basehttp 53638 6197096448 "GET /api/ HTTP/1.1" 200 5674
+INFO 2025-10-18 13:59:50,984 basehttp 53638 6197096448 "GET /api/bookings/ HTTP/1.1" 200 113931
+INFO 2025-10-18 13:59:51,001 basehttp 53638 6197096448 "GET /static/rest_framework/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 304 0
+INFO 2025-10-18 14:00:20,717 basehttp 53638 6197096448 "GET /api/bookings/ HTTP/1.1" 200 113931
+INFO 2025-10-18 14:00:20,765 basehttp 53638 6197096448 "GET /static/rest_framework/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 304 0
+INFO 2025-10-18 14:00:22,008 basehttp 53638 6197096448 "GET /api/ HTTP/1.1" 200 5674
+ERROR 2025-10-18 14:00:22,703 log 53638 6197096448 Internal Server Error: /api/payments/host_payments/
+
+django.core.exceptions.FieldError: Cannot resolve keyword 'id' into field. Choices are: amount, booking, booking_id, chapa_reference, created_at, currency, initiation_response, paid_at, payment_method, status, transaction_id, updated_at, verification_response
+ERROR 2025-10-18 14:00:22,705 basehttp 53638 6197096448 "GET /api/payments/host_payments/ HTTP/1.1" 500 155038
+INFO 2025-10-18 14:00:26,653 basehttp 53638 6197096448 "GET /api/payments/ HTTP/1.1" 200 9566
+WARNING 2025-10-18 14:00:44,355 basehttp 53638 6197096448 "POST /api/payments/ HTTP/1.1" 400 5796
+INFO 2025-10-18 14:00:44,373 basehttp 53638 6197096448 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2025-10-18 14:00:44,378 basehttp 53638 6197096448 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+INFO 2025-10-18 14:00:44,380 basehttp 53638 6213922816 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+INFO 2025-10-18 14:00:44,381 basehttp 53638 6247575552 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+INFO 2025-10-18 14:00:44,383 basehttp 53638 6230749184 "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+INFO 2025-10-18 14:00:44,385 basehttp 53638 6247575552 "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+INFO 2025-10-18 14:00:44,385 basehttp 53638 6264401920 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+INFO 2025-10-18 14:00:44,386 basehttp 53638 6213922816 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO 2025-10-18 14:00:44,386 basehttp 53638 6230749184 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+INFO 2025-10-18 14:00:44,386 basehttp 53638 6197096448 "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 304 0
+INFO 2025-10-18 14:00:44,386 basehttp 53638 6281228288 "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 304 0
+INFO 2025-10-18 14:00:44,399 basehttp 53638 6197096448 "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+INFO 2025-10-18 14:00:57,086 basehttp 53638 6197096448 "GET /api/payments/initiate_payment HTTP/1.1" 301 0
+ERROR 2025-10-18 14:00:57,132 log 53638 6213922816 Internal Server Error: /api/payments/initiate_payment/

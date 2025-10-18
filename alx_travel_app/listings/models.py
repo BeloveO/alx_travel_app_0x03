@@ -99,7 +99,7 @@ class Payment(models.Model):
         ('canceled', 'Canceled'),
     ]
     booking = models.OneToOneField(Booking, on_delete=models.CASCADE, related_name="payment")
-    transaction_id = models.CharField(max_length=100, unique=True)
+    transaction_id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     amount = models.DecimalField(max_digits=10, decimal_places=2)
     currency = models.CharField(max_length=3, default="NGN")
     status = models.CharField(max_length=20, choices=PAYMENT_STATUS, default='pending')

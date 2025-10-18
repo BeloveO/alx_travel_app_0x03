@@ -6,7 +6,7 @@ import logging
 from .models import Booking
 
 # Get logger for payments
-logger = logging.getLogger('payments')
+logger = logging.getLogger('chapa_payment')
 
 @shared_task
 def send_booking_confirmation(booking_id):
