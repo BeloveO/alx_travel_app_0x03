@@ -48,3 +48,21 @@ This includes the Abstract User, Booking, Review and Listing models at the momen
   - author: guest making review
   - rating: ranging from one to five stars for the booking
   - comment: textfield for the author's review.
+
+## Celery Background Tasks
+
+This project uses Celery with RabbitMQ for handling background tasks like email notifications.
+
+### Starting Services
+
+1. Start RabbitMQ: `sudo systemctl start rabbitmq-server`
+2. Start Celery Worker: `celery -A alx_travel_app worker --loglevel=info`
+3. Start Celery Beat: `celery -A alx_travel_app beat --loglevel=info`
+4. Monitor Tasks: `celery -A alx_travel_app flower --port=5555`
+
+### Email Configuration
+
+Set these environment variables for email:
+
+- `EMAIL_HOST_USER`: Your email address
+- `EMAIL_HOST_PASSWORD`: Your app password

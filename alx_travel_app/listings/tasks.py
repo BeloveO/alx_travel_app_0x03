@@ -1,4 +1,4 @@
-from celery import shared_task
+from alx_travel_app.celery import shared_task
 from django.core.mail import send_mail
 from django.conf import settings
 from django.template.loader import render_to_string
@@ -8,8 +8,8 @@ from .models import Booking
 # Get logger for payments
 logger = logging.getLogger('chapa_payment')
 
-@shared_task
-def send_booking_confirmation(booking_id):
+@shared_task(bind=True, retries=3, default_retry_delay=60)
+def send_booking_confirmation(self, booking_id):
     """
     Send booking confirmation email
     """
@@ -25,12 +25,23 @@ def send_booking_confirmation(booking_id):
         
         subject = f'Booking Confirmation - {booking.reference}'
         
-        html_message = render_to_string('emails/booking_confirmation.html', {
-            'user': user,
-            'booking': booking,
-            'property': property,
-        })
-        
+        html_message = f"""
+        <html>
+        <body>
+            <h2>Booking Confirmation</h2>
+            <p>Dear {user.get_full_name() or 'Customer'},</p>
+            <p>Your booking has been confirmed!</p>
+            <ul>
+                <li><strong>Booking Reference:</strong> {booking.reference}</li>
+                <li><strong>Property:</strong> {property.title}</li>
+                <li><strong>Check-in:</strong> {booking.check_in}</li>
+                <li><strong>Check-out:</strong> {booking.check_out}</li>
+                <li><strong>Total Amount:</strong> {booking.total_price}</li>
+            </ul>
+            <p>Thank you for choosing us!</p>
+        </body>
+        </html>
+        """        
         plain_message = f"""
         Dear {user.get_full_name() or 'Customer'},
         
@@ -53,6 +64,8 @@ def send_booking_confirmation(booking_id):
             html_message=html_message,
             fail_silently=False,
         )
+
+        send_mail.send()  # Ensure the email is sent
         
         logger.info("✅ Booking confirmation email sent successfully", extra={
             'booking_id': booking_id,
@@ -77,3 +90,4 @@ def send_booking_confirmation(booking_id):
             'action': 'email_send_failed'
         })
         return f"Failed to send email: {str(e)}"
+    

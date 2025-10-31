@@ -3,6 +3,7 @@ from rest_framework import viewsets, status
 from .models import Listing, Booking, User, Payment
 from rest_framework.response import Response
 from .serializers import ListingSerializer, BookingSerializer, PaymentSerializer, PaymentInitiationSerializer
+from .tasks import send_booking_confirmation
 from rest_framework.filters import SearchFilter, OrderingFilter
 from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework.decorators import action, api_view, permission_classes
@@ -114,6 +115,8 @@ class BookingViewSet(viewsets.ModelViewSet):
     def perform_create(self, serializer):
         # Automatically set the user to the logged-in user when creating a booking
         serializer.save(user=self.request.user)
+        # Trigger email task asynchronously
+        self.send_booking_confirmation_email_async(booking)
 
     @action(detail=False, methods=['get'])
     def my_bookings(self, request):
@@ -185,6 +188,24 @@ class BookingViewSet(viewsets.ModelViewSet):
         return Response({
             'message': 'Use the /api/payments/ endpoint to create payment for this booking.'
         })
+    
+    def send_booking_confirmation_email_async(self, booking):
+        """
+        Trigger the Celery task to send booking confirmation email asynchronously
+        """
+        try:
+            send_booking_confirmation.delay(booking.id)
+            logger.info("📧 Booking confirmation email task triggered", extra={
+                'booking_id': str(booking.id),
+                'user': booking.user.email,
+                'action': 'email_task_triggered'
+            })
+        except Exception as e:
+            logger.error("💥 Failed to trigger booking confirmation email task", extra={
+                'booking_id': str(booking.id),
+                'error': str(e),
+                'action': 'email_task_trigger_failed'
+            })
 
 
 class PaymentViewSet(viewsets.ModelViewSet):
