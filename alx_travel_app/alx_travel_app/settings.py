@@ -95,7 +95,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': env("MYSQL_DATABASE", default='BeloveO$ALXProdev'), 
         'USER': env('MYSQL_USER', default='BeloveO'),
-        'PASSWORD': env('MYSQL_PASSWORD', default=''),
+        'PASSWORD': env('MYSQL_PASSWORD', default='tyxryg-8gokne-gohWub'),
         'HOST': env('MYSQL_HOST', default='BeloveO.mysql.pythonanywhere-services.com'),
         'PORT': env('MYSQL_PORT', default='3306'),
     }
