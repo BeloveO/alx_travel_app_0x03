@@ -44,7 +44,6 @@ def home_view(request):
                 <a href="/admin/">Admin Panel</a>
                 <a href="/swagger/">Swagger Documentation</a>
                 <a href="/api/">API Endpoints</a>
-                <a href="/static/">Static Files</a>
             </div>
         </div>
     </body>
