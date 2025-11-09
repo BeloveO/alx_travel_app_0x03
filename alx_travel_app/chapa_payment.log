@@ -43,3 +43,1521 @@ INFO 2025-10-18 14:00:44,386 basehttp 53638 6281228288 "GET /static/rest_framewo
 INFO 2025-10-18 14:00:44,399 basehttp 53638 6197096448 "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
 INFO 2025-10-18 14:00:57,086 basehttp 53638 6197096448 "GET /api/payments/initiate_payment HTTP/1.1" 301 0
 ERROR 2025-10-18 14:00:57,132 log 53638 6213922816 Internal Server Error: /api/payments/initiate_payment/
+INFO 2025-11-09 10:21:34,766 autoreload 86679 7999561408 Watching for file changes with StatReloader
+INFO 2025-11-09 10:22:31,652 autoreload 87142 7999561408 Watching for file changes with StatReloader
+INFO 2025-11-09 10:23:04,328 autoreload 87498 7999561408 Watching for file changes with StatReloader
+INFO 2025-11-09 10:23:42,829 autoreload 87777 7999561408 Watching for file changes with StatReloader
+INFO 2025-11-09 10:24:05,389 autoreload 88070 7999561408 Watching for file changes with StatReloader
+INFO 2025-11-09 10:24:40,491 autoreload 88580 7999561408 Watching for file changes with StatReloader
+INFO 2025-11-09 10:25:10,685 autoreload 88810 7999561408 Watching for file changes with StatReloader
+INFO 2025-11-09 10:26:09,789 autoreload 88810 7999561408 /Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/alx_travel_app/__init__.py changed, reloading.
+INFO 2025-11-09 10:26:10,254 autoreload 88838 7999561408 Watching for file changes with StatReloader
+INFO 2025-11-09 10:26:50,628 autoreload 88838 7999561408 /Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/listings/tasks.py changed, reloading.
+INFO 2025-11-09 10:26:51,099 autoreload 88882 7999561408 Watching for file changes with StatReloader
+INFO 2025-11-09 10:28:30,470 autoreload 88882 7999561408 /Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/listings/tasks.py changed, reloading.
+INFO 2025-11-09 10:28:30,976 autoreload 88929 7999561408 Watching for file changes with StatReloader
+INFO 2025-11-09 10:30:08,054 autoreload 89103 7999561408 Watching for file changes with StatReloader
+INFO 2025-11-09 10:30:27,744 autoreload 89103 7999561408 /Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/alx_travel_app/__init__.py changed, reloading.
+INFO 2025-11-09 10:30:28,113 autoreload 89121 7999561408 Watching for file changes with StatReloader
+INFO 2025-11-09 10:30:37,491 autoreload 89121 7999561408 /Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/listings/tasks.py changed, reloading.
+INFO 2025-11-09 10:30:37,860 autoreload 89136 7999561408 Watching for file changes with StatReloader
+INFO 2025-11-09 10:30:56,581 autoreload 89136 7999561408 /Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/listings/tasks.py changed, reloading.
+INFO 2025-11-09 10:30:56,961 autoreload 89164 7999561408 Watching for file changes with StatReloader
+INFO 2025-11-09 10:32:53,133 autoreload 89164 7999561408 /Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/listings/tasks.py changed, reloading.
+INFO 2025-11-09 10:32:53,529 autoreload 89236 7999561408 Watching for file changes with StatReloader
+INFO 2025-11-09 10:34:35,219 autoreload 89236 7999561408 /Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/listings/tasks.py changed, reloading.
+INFO 2025-11-09 10:34:35,714 autoreload 89339 7999561408 Watching for file changes with StatReloader
+INFO 2025-11-09 10:35:17,121 autoreload 89638 7999561408 Watching for file changes with StatReloader
+INFO 2025-11-09 10:58:41,024 autoreload 90602 7999561408 Watching for file changes with StatReloader
+INFO 2025-11-09 11:42:21,318 autoreload 98985 7999561408 Watching for file changes with StatReloader
+INFO 2025-11-09 11:42:50,459 autoreload 98985 7999561408 /Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/alx_travel_app/settings.py changed, reloading.
+INFO 2025-11-09 11:52:40,393 autoreload 563 7999561408 Watching for file changes with StatReloader
+INFO 2025-11-09 11:52:57,627 basehttp 563 6203125760 "GET / HTTP/1.1" 200 2213
+INFO 2025-11-09 11:52:57,712 basehttp 563 6203125760 "GET /static/drf-yasg/style.css HTTP/1.1" 200 1047
+INFO 2025-11-09 11:52:57,714 basehttp 563 6270431232 "GET /static/drf-yasg/insQ.min.js HTTP/1.1" 200 2093
+INFO 2025-11-09 11:52:57,714 basehttp 563 6203125760 "GET /static/drf-yasg/swagger-ui-init.js HTTP/1.1" 200 15480
+INFO 2025-11-09 11:52:57,715 basehttp 563 6287257600 "GET /static/drf-yasg/immutable.min.js HTTP/1.1" 200 56904
+INFO 2025-11-09 11:52:57,715 basehttp 563 6219952128 "GET /static/drf-yasg/swagger-ui-dist/swagger-ui.css HTTP/1.1" 200 145206
+INFO 2025-11-09 11:52:57,716 basehttp 563 6253604864 "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js HTTP/1.1" 200 322863
+INFO 2025-11-09 11:52:57,718 basehttp 563 6236778496 "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js HTTP/1.1" 200 1046583
+WARNING 2025-11-09 11:52:58,161 base 563 6203125760 view's BookingViewSet.get_queryset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py", line 2766, in to_python
+    return uuid.UUID(**{input_form: value})
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/uuid.py", line 178, in __init__
+    hex = hex.replace('urn:', '').replace('uuid:', '')
+          ^^^^^^^^^^^
+AttributeError: 'AnonymousUser' object has no attribute 'replace'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/drf_yasg/inspectors/base.py", line 48, in call_view_method
+    return view_method()
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/listings/views.py", line 101, in get_queryset
+    queryset = queryset.filter(user=user)
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/query.py", line 1493, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/query.py", line 1511, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/query.py", line 1518, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1646, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+                ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1678, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ~~~~~~~~~~~~~~~~~^
+        child,
+        ^^^^^^
+    ...<7 lines>...
+        update_join_types=update_join_types,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1588, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1415, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/lookups.py", line 38, in __init__
+    self.rhs = self.get_prep_lookup()
+               ~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/related_lookups.py", line 112, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py", line 2750, in get_prep_value
+    return self.to_python(value)
+           ~~~~~~~~~~~~~~^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py", line 2768, in to_python
+    raise exceptions.ValidationError(
+    ...<3 lines>...
+    )
+django.core.exceptions.ValidationError: ['“AnonymousUser” is not a valid UUID.']
+WARNING 2025-11-09 11:52:58,170 base 563 6203125760 view's BookingViewSet.get_queryset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py", line 2766, in to_python
+    return uuid.UUID(**{input_form: value})
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/uuid.py", line 178, in __init__
+    hex = hex.replace('urn:', '').replace('uuid:', '')
+          ^^^^^^^^^^^
+AttributeError: 'AnonymousUser' object has no attribute 'replace'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/drf_yasg/inspectors/base.py", line 48, in call_view_method
+    return view_method()
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/listings/views.py", line 101, in get_queryset
+    queryset = queryset.filter(user=user)
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/query.py", line 1493, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/query.py", line 1511, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/query.py", line 1518, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1646, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+                ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1678, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ~~~~~~~~~~~~~~~~~^
+        child,
+        ^^^^^^
+    ...<7 lines>...
+        update_join_types=update_join_types,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1588, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1415, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/lookups.py", line 38, in __init__
+    self.rhs = self.get_prep_lookup()
+               ~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/related_lookups.py", line 112, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py", line 2750, in get_prep_value
+    return self.to_python(value)
+           ~~~~~~~~~~~~~~^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py", line 2768, in to_python
+    raise exceptions.ValidationError(
+    ...<3 lines>...
+    )
+django.core.exceptions.ValidationError: ['“AnonymousUser” is not a valid UUID.']
+INFO 2025-11-09 11:52:58,173 basehttp 563 6219952128 "GET /static/drf-yasg/swagger-ui-dist/favicon-32x32.png HTTP/1.1" 200 628
+WARNING 2025-11-09 11:52:58,173 base 563 6203125760 view's BookingViewSet.get_queryset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py", line 2766, in to_python
+    return uuid.UUID(**{input_form: value})
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/uuid.py", line 178, in __init__
+    hex = hex.replace('urn:', '').replace('uuid:', '')
+          ^^^^^^^^^^^
+AttributeError: 'AnonymousUser' object has no attribute 'replace'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/drf_yasg/inspectors/base.py", line 48, in call_view_method
+    return view_method()
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/listings/views.py", line 101, in get_queryset
+    queryset = queryset.filter(user=user)
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/query.py", line 1493, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/query.py", line 1511, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/query.py", line 1518, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1646, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+                ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1678, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ~~~~~~~~~~~~~~~~~^
+        child,
+        ^^^^^^
+    ...<7 lines>...
+        update_join_types=update_join_types,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1588, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1415, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/lookups.py", line 38, in __init__
+    self.rhs = self.get_prep_lookup()
+               ~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/related_lookups.py", line 112, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py", line 2750, in get_prep_value
+    return self.to_python(value)
+           ~~~~~~~~~~~~~~^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py", line 2768, in to_python
+    raise exceptions.ValidationError(
+    ...<3 lines>...
+    )
+django.core.exceptions.ValidationError: ['“AnonymousUser” is not a valid UUID.']
+WARNING 2025-11-09 11:52:58,176 base 563 6203125760 view's BookingViewSet.get_queryset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py", line 2766, in to_python
+    return uuid.UUID(**{input_form: value})
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/uuid.py", line 178, in __init__
+    hex = hex.replace('urn:', '').replace('uuid:', '')
+          ^^^^^^^^^^^
+AttributeError: 'AnonymousUser' object has no attribute 'replace'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/drf_yasg/inspectors/base.py", line 48, in call_view_method
+    return view_method()
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/listings/views.py", line 101, in get_queryset
+    queryset = queryset.filter(user=user)
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/query.py", line 1493, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/query.py", line 1511, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/query.py", line 1518, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1646, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+                ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1678, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ~~~~~~~~~~~~~~~~~^
+        child,
+        ^^^^^^
+    ...<7 lines>...
+        update_join_types=update_join_types,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1588, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1415, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/lookups.py", line 38, in __init__
+    self.rhs = self.get_prep_lookup()
+               ~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/related_lookups.py", line 112, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py", line 2750, in get_prep_value
+    return self.to_python(value)
+           ~~~~~~~~~~~~~~^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py", line 2768, in to_python
+    raise exceptions.ValidationError(
+    ...<3 lines>...
+    )
+django.core.exceptions.ValidationError: ['“AnonymousUser” is not a valid UUID.']
+WARNING 2025-11-09 11:52:58,180 base 563 6203125760 view's BookingViewSet.get_queryset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py", line 2766, in to_python
+    return uuid.UUID(**{input_form: value})
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/uuid.py", line 178, in __init__
+    hex = hex.replace('urn:', '').replace('uuid:', '')
+          ^^^^^^^^^^^
+AttributeError: 'AnonymousUser' object has no attribute 'replace'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/drf_yasg/inspectors/base.py", line 48, in call_view_method
+    return view_method()
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/listings/views.py", line 101, in get_queryset
+    queryset = queryset.filter(user=user)
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/query.py", line 1493, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/query.py", line 1511, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/query.py", line 1518, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1646, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+                ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1678, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ~~~~~~~~~~~~~~~~~^
+        child,
+        ^^^^^^
+    ...<7 lines>...
+        update_join_types=update_join_types,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1588, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1415, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/lookups.py", line 38, in __init__
+    self.rhs = self.get_prep_lookup()
+               ~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/related_lookups.py", line 112, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py", line 2750, in get_prep_value
+    return self.to_python(value)
+           ~~~~~~~~~~~~~~^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py", line 2768, in to_python
+    raise exceptions.ValidationError(
+    ...<3 lines>...
+    )
+django.core.exceptions.ValidationError: ['“AnonymousUser” is not a valid UUID.']
+WARNING 2025-11-09 11:52:58,182 base 563 6203125760 view's BookingViewSet.get_queryset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py", line 2766, in to_python
+    return uuid.UUID(**{input_form: value})
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/uuid.py", line 178, in __init__
+    hex = hex.replace('urn:', '').replace('uuid:', '')
+          ^^^^^^^^^^^
+AttributeError: 'AnonymousUser' object has no attribute 'replace'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/drf_yasg/inspectors/base.py", line 48, in call_view_method
+    return view_method()
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/listings/views.py", line 101, in get_queryset
+    queryset = queryset.filter(user=user)
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/query.py", line 1493, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/query.py", line 1511, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/query.py", line 1518, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1646, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+                ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1678, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ~~~~~~~~~~~~~~~~~^
+        child,
+        ^^^^^^
+    ...<7 lines>...
+        update_join_types=update_join_types,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1588, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1415, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/lookups.py", line 38, in __init__
+    self.rhs = self.get_prep_lookup()
+               ~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/related_lookups.py", line 112, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py", line 2750, in get_prep_value
+    return self.to_python(value)
+           ~~~~~~~~~~~~~~^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py", line 2768, in to_python
+    raise exceptions.ValidationError(
+    ...<3 lines>...
+    )
+django.core.exceptions.ValidationError: ['“AnonymousUser” is not a valid UUID.']
+WARNING 2025-11-09 11:52:58,183 base 563 6203125760 view's BookingViewSet.get_queryset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py", line 2766, in to_python
+    return uuid.UUID(**{input_form: value})
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/uuid.py", line 178, in __init__
+    hex = hex.replace('urn:', '').replace('uuid:', '')
+          ^^^^^^^^^^^
+AttributeError: 'AnonymousUser' object has no attribute 'replace'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/drf_yasg/inspectors/base.py", line 48, in call_view_method
+    return view_method()
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/listings/views.py", line 101, in get_queryset
+    queryset = queryset.filter(user=user)
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/query.py", line 1493, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/query.py", line 1511, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/query.py", line 1518, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1646, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+                ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1678, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ~~~~~~~~~~~~~~~~~^
+        child,
+        ^^^^^^
+    ...<7 lines>...
+        update_join_types=update_join_types,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1588, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1415, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/lookups.py", line 38, in __init__
+    self.rhs = self.get_prep_lookup()
+               ~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/related_lookups.py", line 112, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py", line 2750, in get_prep_value
+    return self.to_python(value)
+           ~~~~~~~~~~~~~~^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py", line 2768, in to_python
+    raise exceptions.ValidationError(
+    ...<3 lines>...
+    )
+django.core.exceptions.ValidationError: ['“AnonymousUser” is not a valid UUID.']
+WARNING 2025-11-09 11:52:58,185 base 563 6203125760 view's BookingViewSet.get_queryset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py", line 2766, in to_python
+    return uuid.UUID(**{input_form: value})
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/uuid.py", line 178, in __init__
+    hex = hex.replace('urn:', '').replace('uuid:', '')
+          ^^^^^^^^^^^
+AttributeError: 'AnonymousUser' object has no attribute 'replace'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/drf_yasg/inspectors/base.py", line 48, in call_view_method
+    return view_method()
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/listings/views.py", line 101, in get_queryset
+    queryset = queryset.filter(user=user)
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/query.py", line 1493, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/query.py", line 1511, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/query.py", line 1518, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1646, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+                ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1678, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ~~~~~~~~~~~~~~~~~^
+        child,
+        ^^^^^^
+    ...<7 lines>...
+        update_join_types=update_join_types,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1588, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1415, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/lookups.py", line 38, in __init__
+    self.rhs = self.get_prep_lookup()
+               ~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/related_lookups.py", line 112, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py", line 2750, in get_prep_value
+    return self.to_python(value)
+           ~~~~~~~~~~~~~~^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py", line 2768, in to_python
+    raise exceptions.ValidationError(
+    ...<3 lines>...
+    )
+django.core.exceptions.ValidationError: ['“AnonymousUser” is not a valid UUID.']
+INFO 2025-11-09 11:52:58,225 basehttp 563 6203125760 "GET /?format=openapi HTTP/1.1" 200 16843
+WARNING 2025-11-09 11:52:58,249 basehttp 563 6304083968 "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 2942
+WARNING 2025-11-09 11:52:58,253 basehttp 563 6304083968 "GET /apple-touch-icon.png HTTP/1.1" 404 2906
+INFO 2025-11-09 11:53:48,585 basehttp 563 6203125760 "GET / HTTP/1.1" 200 2213
+WARNING 2025-11-09 11:53:48,769 base 563 6203125760 view's BookingViewSet.get_queryset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py", line 2766, in to_python
+    return uuid.UUID(**{input_form: value})
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/uuid.py", line 178, in __init__
+    hex = hex.replace('urn:', '').replace('uuid:', '')
+          ^^^^^^^^^^^
+AttributeError: 'AnonymousUser' object has no attribute 'replace'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/drf_yasg/inspectors/base.py", line 48, in call_view_method
+    return view_method()
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/listings/views.py", line 101, in get_queryset
+    queryset = queryset.filter(user=user)
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/query.py", line 1493, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/query.py", line 1511, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/query.py", line 1518, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1646, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+                ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1678, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ~~~~~~~~~~~~~~~~~^
+        child,
+        ^^^^^^
+    ...<7 lines>...
+        update_join_types=update_join_types,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1588, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1415, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/lookups.py", line 38, in __init__
+    self.rhs = self.get_prep_lookup()
+               ~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/related_lookups.py", line 112, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py", line 2750, in get_prep_value
+    return self.to_python(value)
+           ~~~~~~~~~~~~~~^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py", line 2768, in to_python
+    raise exceptions.ValidationError(
+    ...<3 lines>...
+    )
+django.core.exceptions.ValidationError: ['“AnonymousUser” is not a valid UUID.']
+WARNING 2025-11-09 11:53:48,774 base 563 6203125760 view's BookingViewSet.get_queryset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py", line 2766, in to_python
+    return uuid.UUID(**{input_form: value})
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/uuid.py", line 178, in __init__
+    hex = hex.replace('urn:', '').replace('uuid:', '')
+          ^^^^^^^^^^^
+AttributeError: 'AnonymousUser' object has no attribute 'replace'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/drf_yasg/inspectors/base.py", line 48, in call_view_method
+    return view_method()
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/listings/views.py", line 101, in get_queryset
+    queryset = queryset.filter(user=user)
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/query.py", line 1493, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/query.py", line 1511, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/query.py", line 1518, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1646, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+                ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1678, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ~~~~~~~~~~~~~~~~~^
+        child,
+        ^^^^^^
+    ...<7 lines>...
+        update_join_types=update_join_types,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1588, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1415, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/lookups.py", line 38, in __init__
+    self.rhs = self.get_prep_lookup()
+               ~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/related_lookups.py", line 112, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py", line 2750, in get_prep_value
+    return self.to_python(value)
+           ~~~~~~~~~~~~~~^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py", line 2768, in to_python
+    raise exceptions.ValidationError(
+    ...<3 lines>...
+    )
+django.core.exceptions.ValidationError: ['“AnonymousUser” is not a valid UUID.']
+WARNING 2025-11-09 11:53:48,776 base 563 6203125760 view's BookingViewSet.get_queryset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py", line 2766, in to_python
+    return uuid.UUID(**{input_form: value})
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/uuid.py", line 178, in __init__
+    hex = hex.replace('urn:', '').replace('uuid:', '')
+          ^^^^^^^^^^^
+AttributeError: 'AnonymousUser' object has no attribute 'replace'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/drf_yasg/inspectors/base.py", line 48, in call_view_method
+    return view_method()
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/listings/views.py", line 101, in get_queryset
+    queryset = queryset.filter(user=user)
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/query.py", line 1493, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/query.py", line 1511, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/query.py", line 1518, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1646, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+                ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1678, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ~~~~~~~~~~~~~~~~~^
+        child,
+        ^^^^^^
+    ...<7 lines>...
+        update_join_types=update_join_types,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1588, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1415, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/lookups.py", line 38, in __init__
+    self.rhs = self.get_prep_lookup()
+               ~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/related_lookups.py", line 112, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py", line 2750, in get_prep_value
+    return self.to_python(value)
+           ~~~~~~~~~~~~~~^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py", line 2768, in to_python
+    raise exceptions.ValidationError(
+    ...<3 lines>...
+    )
+django.core.exceptions.ValidationError: ['“AnonymousUser” is not a valid UUID.']
+WARNING 2025-11-09 11:53:48,778 base 563 6203125760 view's BookingViewSet.get_queryset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py", line 2766, in to_python
+    return uuid.UUID(**{input_form: value})
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/uuid.py", line 178, in __init__
+    hex = hex.replace('urn:', '').replace('uuid:', '')
+          ^^^^^^^^^^^
+AttributeError: 'AnonymousUser' object has no attribute 'replace'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/drf_yasg/inspectors/base.py", line 48, in call_view_method
+    return view_method()
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/listings/views.py", line 101, in get_queryset
+    queryset = queryset.filter(user=user)
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/query.py", line 1493, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/query.py", line 1511, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/query.py", line 1518, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1646, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+                ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1678, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ~~~~~~~~~~~~~~~~~^
+        child,
+        ^^^^^^
+    ...<7 lines>...
+        update_join_types=update_join_types,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1588, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1415, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/lookups.py", line 38, in __init__
+    self.rhs = self.get_prep_lookup()
+               ~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/related_lookups.py", line 112, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py", line 2750, in get_prep_value
+    return self.to_python(value)
+           ~~~~~~~~~~~~~~^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py", line 2768, in to_python
+    raise exceptions.ValidationError(
+    ...<3 lines>...
+    )
+django.core.exceptions.ValidationError: ['“AnonymousUser” is not a valid UUID.']
+WARNING 2025-11-09 11:53:48,780 base 563 6203125760 view's BookingViewSet.get_queryset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py", line 2766, in to_python
+    return uuid.UUID(**{input_form: value})
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/uuid.py", line 178, in __init__
+    hex = hex.replace('urn:', '').replace('uuid:', '')
+          ^^^^^^^^^^^
+AttributeError: 'AnonymousUser' object has no attribute 'replace'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/drf_yasg/inspectors/base.py", line 48, in call_view_method
+    return view_method()
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/listings/views.py", line 101, in get_queryset
+    queryset = queryset.filter(user=user)
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/query.py", line 1493, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/query.py", line 1511, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/query.py", line 1518, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1646, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+                ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1678, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ~~~~~~~~~~~~~~~~~^
+        child,
+        ^^^^^^
+    ...<7 lines>...
+        update_join_types=update_join_types,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1588, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1415, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/lookups.py", line 38, in __init__
+    self.rhs = self.get_prep_lookup()
+               ~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/related_lookups.py", line 112, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py", line 2750, in get_prep_value
+    return self.to_python(value)
+           ~~~~~~~~~~~~~~^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py", line 2768, in to_python
+    raise exceptions.ValidationError(
+    ...<3 lines>...
+    )
+django.core.exceptions.ValidationError: ['“AnonymousUser” is not a valid UUID.']
+WARNING 2025-11-09 11:53:48,782 base 563 6203125760 view's BookingViewSet.get_queryset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py", line 2766, in to_python
+    return uuid.UUID(**{input_form: value})
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/uuid.py", line 178, in __init__
+    hex = hex.replace('urn:', '').replace('uuid:', '')
+          ^^^^^^^^^^^
+AttributeError: 'AnonymousUser' object has no attribute 'replace'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/drf_yasg/inspectors/base.py", line 48, in call_view_method
+    return view_method()
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/listings/views.py", line 101, in get_queryset
+    queryset = queryset.filter(user=user)
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/query.py", line 1493, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/query.py", line 1511, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/query.py", line 1518, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1646, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+                ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1678, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ~~~~~~~~~~~~~~~~~^
+        child,
+        ^^^^^^
+    ...<7 lines>...
+        update_join_types=update_join_types,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1588, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1415, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/lookups.py", line 38, in __init__
+    self.rhs = self.get_prep_lookup()
+               ~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/related_lookups.py", line 112, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py", line 2750, in get_prep_value
+    return self.to_python(value)
+           ~~~~~~~~~~~~~~^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py", line 2768, in to_python
+    raise exceptions.ValidationError(
+    ...<3 lines>...
+    )
+django.core.exceptions.ValidationError: ['“AnonymousUser” is not a valid UUID.']
+WARNING 2025-11-09 11:53:48,785 base 563 6203125760 view's BookingViewSet.get_queryset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py", line 2766, in to_python
+    return uuid.UUID(**{input_form: value})
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/uuid.py", line 178, in __init__
+    hex = hex.replace('urn:', '').replace('uuid:', '')
+          ^^^^^^^^^^^
+AttributeError: 'AnonymousUser' object has no attribute 'replace'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/drf_yasg/inspectors/base.py", line 48, in call_view_method
+    return view_method()
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/listings/views.py", line 101, in get_queryset
+    queryset = queryset.filter(user=user)
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/query.py", line 1493, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/query.py", line 1511, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/query.py", line 1518, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1646, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+                ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1678, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ~~~~~~~~~~~~~~~~~^
+        child,
+        ^^^^^^
+    ...<7 lines>...
+        update_join_types=update_join_types,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1588, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1415, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/lookups.py", line 38, in __init__
+    self.rhs = self.get_prep_lookup()
+               ~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/related_lookups.py", line 112, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py", line 2750, in get_prep_value
+    return self.to_python(value)
+           ~~~~~~~~~~~~~~^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py", line 2768, in to_python
+    raise exceptions.ValidationError(
+    ...<3 lines>...
+    )
+django.core.exceptions.ValidationError: ['“AnonymousUser” is not a valid UUID.']
+WARNING 2025-11-09 11:53:48,788 base 563 6203125760 view's BookingViewSet.get_queryset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py", line 2766, in to_python
+    return uuid.UUID(**{input_form: value})
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/uuid.py", line 178, in __init__
+    hex = hex.replace('urn:', '').replace('uuid:', '')
+          ^^^^^^^^^^^
+AttributeError: 'AnonymousUser' object has no attribute 'replace'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/drf_yasg/inspectors/base.py", line 48, in call_view_method
+    return view_method()
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/listings/views.py", line 101, in get_queryset
+    queryset = queryset.filter(user=user)
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/query.py", line 1493, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/query.py", line 1511, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/query.py", line 1518, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1646, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+                ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1678, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ~~~~~~~~~~~~~~~~~^
+        child,
+        ^^^^^^
+    ...<7 lines>...
+        update_join_types=update_join_types,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1588, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1415, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/lookups.py", line 38, in __init__
+    self.rhs = self.get_prep_lookup()
+               ~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/related_lookups.py", line 112, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py", line 2750, in get_prep_value
+    return self.to_python(value)
+           ~~~~~~~~~~~~~~^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py", line 2768, in to_python
+    raise exceptions.ValidationError(
+    ...<3 lines>...
+    )
+django.core.exceptions.ValidationError: ['“AnonymousUser” is not a valid UUID.']
+INFO 2025-11-09 11:53:48,813 basehttp 563 6203125760 "GET /?format=openapi HTTP/1.1" 200 16843
+INFO 2025-11-09 11:53:50,152 basehttp 563 6203125760 "GET /swagger/ HTTP/1.1" 200 2221
+WARNING 2025-11-09 11:53:50,203 base 563 6203125760 view's BookingViewSet.get_queryset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py", line 2766, in to_python
+    return uuid.UUID(**{input_form: value})
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/uuid.py", line 178, in __init__
+    hex = hex.replace('urn:', '').replace('uuid:', '')
+          ^^^^^^^^^^^
+AttributeError: 'AnonymousUser' object has no attribute 'replace'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/drf_yasg/inspectors/base.py", line 48, in call_view_method
+    return view_method()
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/listings/views.py", line 101, in get_queryset
+    queryset = queryset.filter(user=user)
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/query.py", line 1493, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/query.py", line 1511, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/query.py", line 1518, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1646, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+                ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1678, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ~~~~~~~~~~~~~~~~~^
+        child,
+        ^^^^^^
+    ...<7 lines>...
+        update_join_types=update_join_types,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1588, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1415, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/lookups.py", line 38, in __init__
+    self.rhs = self.get_prep_lookup()
+               ~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/related_lookups.py", line 112, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py", line 2750, in get_prep_value
+    return self.to_python(value)
+           ~~~~~~~~~~~~~~^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py", line 2768, in to_python
+    raise exceptions.ValidationError(
+    ...<3 lines>...
+    )
+django.core.exceptions.ValidationError: ['“AnonymousUser” is not a valid UUID.']
+WARNING 2025-11-09 11:53:50,207 base 563 6203125760 view's BookingViewSet.get_queryset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py", line 2766, in to_python
+    return uuid.UUID(**{input_form: value})
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/uuid.py", line 178, in __init__
+    hex = hex.replace('urn:', '').replace('uuid:', '')
+          ^^^^^^^^^^^
+AttributeError: 'AnonymousUser' object has no attribute 'replace'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/drf_yasg/inspectors/base.py", line 48, in call_view_method
+    return view_method()
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/listings/views.py", line 101, in get_queryset
+    queryset = queryset.filter(user=user)
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/query.py", line 1493, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/query.py", line 1511, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/query.py", line 1518, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1646, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+                ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1678, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ~~~~~~~~~~~~~~~~~^
+        child,
+        ^^^^^^
+    ...<7 lines>...
+        update_join_types=update_join_types,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1588, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1415, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/lookups.py", line 38, in __init__
+    self.rhs = self.get_prep_lookup()
+               ~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/related_lookups.py", line 112, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py", line 2750, in get_prep_value
+    return self.to_python(value)
+           ~~~~~~~~~~~~~~^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py", line 2768, in to_python
+    raise exceptions.ValidationError(
+    ...<3 lines>...
+    )
+django.core.exceptions.ValidationError: ['“AnonymousUser” is not a valid UUID.']
+WARNING 2025-11-09 11:53:50,209 base 563 6203125760 view's BookingViewSet.get_queryset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py", line 2766, in to_python
+    return uuid.UUID(**{input_form: value})
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/uuid.py", line 178, in __init__
+    hex = hex.replace('urn:', '').replace('uuid:', '')
+          ^^^^^^^^^^^
+AttributeError: 'AnonymousUser' object has no attribute 'replace'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/drf_yasg/inspectors/base.py", line 48, in call_view_method
+    return view_method()
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/listings/views.py", line 101, in get_queryset
+    queryset = queryset.filter(user=user)
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/query.py", line 1493, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/query.py", line 1511, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/query.py", line 1518, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1646, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+                ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1678, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ~~~~~~~~~~~~~~~~~^
+        child,
+        ^^^^^^
+    ...<7 lines>...
+        update_join_types=update_join_types,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1588, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1415, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/lookups.py", line 38, in __init__
+    self.rhs = self.get_prep_lookup()
+               ~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/related_lookups.py", line 112, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py", line 2750, in get_prep_value
+    return self.to_python(value)
+           ~~~~~~~~~~~~~~^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py", line 2768, in to_python
+    raise exceptions.ValidationError(
+    ...<3 lines>...
+    )
+django.core.exceptions.ValidationError: ['“AnonymousUser” is not a valid UUID.']
+WARNING 2025-11-09 11:53:50,210 base 563 6203125760 view's BookingViewSet.get_queryset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py", line 2766, in to_python
+    return uuid.UUID(**{input_form: value})
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/uuid.py", line 178, in __init__
+    hex = hex.replace('urn:', '').replace('uuid:', '')
+          ^^^^^^^^^^^
+AttributeError: 'AnonymousUser' object has no attribute 'replace'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/drf_yasg/inspectors/base.py", line 48, in call_view_method
+    return view_method()
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/listings/views.py", line 101, in get_queryset
+    queryset = queryset.filter(user=user)
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/query.py", line 1493, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/query.py", line 1511, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/query.py", line 1518, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1646, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+                ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1678, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ~~~~~~~~~~~~~~~~~^
+        child,
+        ^^^^^^
+    ...<7 lines>...
+        update_join_types=update_join_types,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1588, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1415, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/lookups.py", line 38, in __init__
+    self.rhs = self.get_prep_lookup()
+               ~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/related_lookups.py", line 112, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py", line 2750, in get_prep_value
+    return self.to_python(value)
+           ~~~~~~~~~~~~~~^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py", line 2768, in to_python
+    raise exceptions.ValidationError(
+    ...<3 lines>...
+    )
+django.core.exceptions.ValidationError: ['“AnonymousUser” is not a valid UUID.']
+WARNING 2025-11-09 11:53:50,212 base 563 6203125760 view's BookingViewSet.get_queryset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py", line 2766, in to_python
+    return uuid.UUID(**{input_form: value})
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/uuid.py", line 178, in __init__
+    hex = hex.replace('urn:', '').replace('uuid:', '')
+          ^^^^^^^^^^^
+AttributeError: 'AnonymousUser' object has no attribute 'replace'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/drf_yasg/inspectors/base.py", line 48, in call_view_method
+    return view_method()
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/listings/views.py", line 101, in get_queryset
+    queryset = queryset.filter(user=user)
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/query.py", line 1493, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/query.py", line 1511, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/query.py", line 1518, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1646, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+                ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1678, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ~~~~~~~~~~~~~~~~~^
+        child,
+        ^^^^^^
+    ...<7 lines>...
+        update_join_types=update_join_types,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1588, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1415, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/lookups.py", line 38, in __init__
+    self.rhs = self.get_prep_lookup()
+               ~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/related_lookups.py", line 112, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py", line 2750, in get_prep_value
+    return self.to_python(value)
+           ~~~~~~~~~~~~~~^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py", line 2768, in to_python
+    raise exceptions.ValidationError(
+    ...<3 lines>...
+    )
+django.core.exceptions.ValidationError: ['“AnonymousUser” is not a valid UUID.']
+WARNING 2025-11-09 11:53:50,214 base 563 6203125760 view's BookingViewSet.get_queryset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py", line 2766, in to_python
+    return uuid.UUID(**{input_form: value})
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/uuid.py", line 178, in __init__
+    hex = hex.replace('urn:', '').replace('uuid:', '')
+          ^^^^^^^^^^^
+AttributeError: 'AnonymousUser' object has no attribute 'replace'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/drf_yasg/inspectors/base.py", line 48, in call_view_method
+    return view_method()
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/listings/views.py", line 101, in get_queryset
+    queryset = queryset.filter(user=user)
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/query.py", line 1493, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/query.py", line 1511, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/query.py", line 1518, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1646, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+                ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1678, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ~~~~~~~~~~~~~~~~~^
+        child,
+        ^^^^^^
+    ...<7 lines>...
+        update_join_types=update_join_types,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1588, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1415, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/lookups.py", line 38, in __init__
+    self.rhs = self.get_prep_lookup()
+               ~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/related_lookups.py", line 112, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py", line 2750, in get_prep_value
+    return self.to_python(value)
+           ~~~~~~~~~~~~~~^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py", line 2768, in to_python
+    raise exceptions.ValidationError(
+    ...<3 lines>...
+    )
+django.core.exceptions.ValidationError: ['“AnonymousUser” is not a valid UUID.']
+WARNING 2025-11-09 11:53:50,215 base 563 6203125760 view's BookingViewSet.get_queryset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py", line 2766, in to_python
+    return uuid.UUID(**{input_form: value})
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/uuid.py", line 178, in __init__
+    hex = hex.replace('urn:', '').replace('uuid:', '')
+          ^^^^^^^^^^^
+AttributeError: 'AnonymousUser' object has no attribute 'replace'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/drf_yasg/inspectors/base.py", line 48, in call_view_method
+    return view_method()
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/listings/views.py", line 101, in get_queryset
+    queryset = queryset.filter(user=user)
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/query.py", line 1493, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/query.py", line 1511, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/query.py", line 1518, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1646, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+                ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1678, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ~~~~~~~~~~~~~~~~~^
+        child,
+        ^^^^^^
+    ...<7 lines>...
+        update_join_types=update_join_types,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1588, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1415, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/lookups.py", line 38, in __init__
+    self.rhs = self.get_prep_lookup()
+               ~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/related_lookups.py", line 112, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py", line 2750, in get_prep_value
+    return self.to_python(value)
+           ~~~~~~~~~~~~~~^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py", line 2768, in to_python
+    raise exceptions.ValidationError(
+    ...<3 lines>...
+    )
+django.core.exceptions.ValidationError: ['“AnonymousUser” is not a valid UUID.']
+WARNING 2025-11-09 11:53:50,217 base 563 6203125760 view's BookingViewSet.get_queryset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py", line 2766, in to_python
+    return uuid.UUID(**{input_form: value})
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/uuid.py", line 178, in __init__
+    hex = hex.replace('urn:', '').replace('uuid:', '')
+          ^^^^^^^^^^^
+AttributeError: 'AnonymousUser' object has no attribute 'replace'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/drf_yasg/inspectors/base.py", line 48, in call_view_method
+    return view_method()
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/listings/views.py", line 101, in get_queryset
+    queryset = queryset.filter(user=user)
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/query.py", line 1493, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/query.py", line 1511, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/query.py", line 1518, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1646, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+                ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1678, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ~~~~~~~~~~~~~~~~~^
+        child,
+        ^^^^^^
+    ...<7 lines>...
+        update_join_types=update_join_types,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1588, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1415, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/lookups.py", line 38, in __init__
+    self.rhs = self.get_prep_lookup()
+               ~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/related_lookups.py", line 112, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py", line 2750, in get_prep_value
+    return self.to_python(value)
+           ~~~~~~~~~~~~~~^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py", line 2768, in to_python
+    raise exceptions.ValidationError(
+    ...<3 lines>...
+    )
+django.core.exceptions.ValidationError: ['“AnonymousUser” is not a valid UUID.']
+INFO 2025-11-09 11:53:50,228 basehttp 563 6203125760 "GET /swagger/?format=openapi HTTP/1.1" 200 16843
+ERROR 2025-11-09 11:54:41,236 log 563 6203125760 Internal Server Error: /api/listings/
+Traceback (most recent call last):
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/backends/mysql/base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/MySQLdb/cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/MySQLdb/cursors.py", line 330, in _query
+    db.query(q)
+    ~~~~~~~~^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/MySQLdb/connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+MySQLdb.ProgrammingError: (1146, "Table 'alxprodev.listings_user' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/rest_framework/mixins.py", line 18, in create
+    serializer.is_valid(raise_exception=True)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 225, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 444, in run_validation
+    value = self.to_internal_value(data)
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 501, in to_internal_value
+    validated_value = field.run_validation(primitive_value)
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/rest_framework/relations.py", line 155, in run_validation
+    return super().run_validation(data)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/rest_framework/fields.py", line 538, in run_validation
+    value = self.to_internal_value(data)
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/rest_framework/relations.py", line 259, in to_internal_value
+    return queryset.get(pk=data)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/query.py", line 629, in get
+    num = len(clone)
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/query.py", line 366, in __len__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/query.py", line 1949, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/models/sql/compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/django/db/backends/mysql/base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/MySQLdb/cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/MySQLdb/cursors.py", line 330, in _query
+    db.query(q)
+    ~~~~~~~~^^^
+  File "/Users/beloveolusola/Desktop/alx_travel_app_0x03/alx_travel_app/venv/lib/python3.13/site-packages/MySQLdb/connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: (1146, "Table 'alxprodev.listings_user' doesn't exist")
+ERROR 2025-11-09 11:54:41,243 basehttp 563 6203125760 "POST /api/listings/ HTTP/1.1" 500 26288

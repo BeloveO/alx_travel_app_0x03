@@ -17,7 +17,7 @@ import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-# Initialise environment variables
+# Initialize environment variables
 env = environ.Env(
     DEBUG=(bool, False)
 )
@@ -32,7 +32,7 @@ SECRET_KEY = 'django-insecure-rf_gop2qge05b#*npcmongzq0!%s^*0=&y8c)*o^btu36b+*-&
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['BeloveO.pythonanywhere.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     'django_seed',              # Django Seed for seeding database
     'faker',                    # Faker for generating fake data
     'django_filters',
+    'celery',                   # Celery for asynchronous tasks
 ]
 
 MIDDLEWARE = [
@@ -92,11 +93,11 @@ WSGI_APPLICATION = 'alx_travel_app.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': env('MYSQL_DATABASE'),
-        'USER': env('MYSQL_USER'),
-        'PASSWORD': env('MYSQL_PASSWORD'),
-        'HOST': env('MYSQL_HOST', default='localhost'),
-        'PORT': env('MYSQL_PORT', default='3306'),
+        'NAME': env("MYSQL_DATABASE", default='ALXProdev'), 
+        'USER': env('MYSQL_USER', default='alx'),
+        'PASSWORD': env('MYSQL_PASSWORD', default='ALX_NIGERIA'),
+        'HOST': env('MYSQL_HOST', default='BeloveO.mysql.pythonanywhere-services.com'),
+        'PORT': env('MYSQL_PORT', default='3307'),
     }
 }
 
@@ -163,15 +164,17 @@ CELERY_ACCEPT_CONTENT = ['json']
 CELERY_TASK_SERIALIZER = 'json'
 CELERY_RESULT_SERIALIZER = 'json'
 CELERY_TIMEZONE = 'UTC'
+CELERY_TASK_TRACK_STARTED = True
+CELERY_TASK_TIME_LIMIT = 30 * 60  # 30 minutes
 
 # Email Configuration
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = env('EMAIL_HOST_USER')
-EMAIL_HOST_PASSWORD = env('EMAIL_HOST_PASSWORD')
-DEFAULT_FROM_EMAIL = env('DEFAULT_FROM_EMAIL')
+EMAIL_HOST_USER = env('EMAIL_HOST_USER', default='')
+EMAIL_HOST_PASSWORD = env('EMAIL_HOST_PASSWORD', default='')
+DEFAULT_FROM_EMAIL = env('DEFAULT_FROM_EMAIL', default='')
 
 # Chapa Configuration
 CHAPA_SECRET_KEY = os.getenv('CHAPA_SECRET_KEY')
