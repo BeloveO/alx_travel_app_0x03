@@ -42,7 +42,8 @@ def home_view(request):
             <p>Django application running.</p>
             <div>
                 <a href="/admin/">Admin Panel</a>
-                <a href="/swagger/">Swagger Documentation</a>
+                <a href="/swagger/" target="_blank">Swagger UI</a>
+                <a href="/redoc/" target="_blank">ReDoc Documentation</a>
                 <a href="/api/">API Endpoints</a>
             </div>
         </div>
@@ -86,8 +87,10 @@ urlpatterns = [
     path('', home_view, name='home'),
     path('admin/', admin.site.urls),
     path('api/', include('listings.urls')),
-    path('swagger/', schema_view.with_ui, name='schema-swagger-ui'),
-    path('redoc/', schema_view.with_ui, name='schema-redoc'),
+    path('swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
+    path('redoc/', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),
+    re_path(r'^swagger\.json$', schema_view.without_ui(cache_timeout=0), name='schema-json'),
+    re_path(r'^swagger\.yaml$', schema_view.without_ui(cache_timeout=0), name='schema-yaml'),
 ]
 
 import logging
