@@ -121,9 +121,8 @@ urlpatterns = [
     path('', home_view, name='home'),
     path('admin/', admin.site.urls),
     path('api/', include('listings.urls')),
-    path('swagger/', external_swagger),  # Use external Swagger UI
+    path('swagger/', external_swagger),
     path('swagger.json', schema_view.without_ui(cache_timeout=0)),
-    path('redoc/', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),
 ]
 
 import logging
