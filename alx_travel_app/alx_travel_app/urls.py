@@ -23,13 +23,31 @@ from django.http import HttpResponse
 
 def home_view(request):
     return HttpResponse("""
-    <h1>ALX Travel App is Running!</h1>
-    <p>Your deployment is successful!</p>
-    <ul>
-        <li><a href="/admin/">Admin Panel</a></li>
-        <li><a href="/swagger/">Swagger Documentation</a></li>
-        <li><a href="/api/">API Endpoints</a></li>
-    </ul>
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>ALX Travel App - Deployment Successful</title>
+        <style>
+            body { font-family: Arial, sans-serif; max-width: 800px; margin: 50px auto; padding: 20px; }
+            .container { background: #f5f5f5; padding: 30px; border-radius: 10px; }
+            a { display: inline-block; margin: 10px; padding: 10px 20px; background: #007bff; color: white; text-decoration: none; border-radius: 5px; }
+            a:hover { background: #0056b3; }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>🚀 ALX Travel App Deployment Successful!</h1>
+            <p>Your Django application is running correctly on PythonAnywhere.</p>
+            <div>
+                <a href="/admin/">Admin Panel</a>
+                <a href="/swagger/">Swagger Documentation</a>
+                <a href="/api/">API Endpoints</a>
+                <a href="/static/">Static Files</a>
+            </div>
+            <p><strong>Debug Info:</strong> If you can see this page, your URL routing is working!</p>
+        </div>
+    </body>
+    </html>
     """)
 
 def test_logging(request):
