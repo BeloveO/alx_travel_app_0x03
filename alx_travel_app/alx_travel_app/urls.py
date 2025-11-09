@@ -15,7 +15,7 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path, include
+from django.urls import path, include, re_path
 from rest_framework import permissions
 from drf_yasg.views import get_schema_view
 from drf_yasg import openapi
@@ -36,15 +36,14 @@ def home_view(request):
     </head>
     <body>
         <div class="container">
-            <h1>🚀 ALX Travel App Deployment Successful!</h1>
-            <p>Your Django application is running correctly on PythonAnywhere.</p>
+            <h1>ALX Travel App Deployment Successful!</h1>
+            <p>Django application running.</p>
             <div>
                 <a href="/admin/">Admin Panel</a>
                 <a href="/swagger/">Swagger Documentation</a>
                 <a href="/api/">API Endpoints</a>
                 <a href="/static/">Static Files</a>
             </div>
-            <p><strong>Debug Info:</strong> If you can see this page, your URL routing is working!</p>
         </div>
     </body>
     </html>
@@ -85,6 +84,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include('listings.urls')),
     path('swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
+    re_path(r'^swagger(?P<format>\.json|\.yaml)$', schema_view.without_ui(cache_timeout=0), name='schema-json'),
     path('redoc/', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),
 ]
 
