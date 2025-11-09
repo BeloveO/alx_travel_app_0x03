@@ -21,6 +21,17 @@ from drf_yasg.views import get_schema_view
 from drf_yasg import openapi
 from django.http import HttpResponse
 
+def home_view(request):
+    return HttpResponse("""
+    <h1>ALX Travel App is Running!</h1>
+    <p>Your deployment is successful!</p>
+    <ul>
+        <li><a href="/admin/">Admin Panel</a></li>
+        <li><a href="/swagger/">Swagger Documentation</a></li>
+        <li><a href="/api/">API Endpoints</a></li>
+    </ul>
+    """)
+
 def test_logging(request):
     """Test endpoint to verify logging is working"""
     payments_logger = logging.getLogger('payments')
@@ -52,7 +63,7 @@ schema_view = get_schema_view(
 )
 
 urlpatterns = [
-    path('', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
+    path('', home_view, name='home'),
     path('admin/', admin.site.urls),
     path('api/', include('listings.urls')),
     path('swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
