@@ -20,6 +20,8 @@ from rest_framework import permissions
 from drf_yasg.views import get_schema_view
 from drf_yasg import openapi
 from django.http import HttpResponse
+from django.views.decorators.csrf import csrf_exempt
+
 
 def home_view(request):
     return HttpResponse("""
@@ -79,13 +81,23 @@ schema_view = get_schema_view(
    permission_classes=(permissions.AllowAny,),
 )
 
+@csrf_exempt
+def public_swagger_view(request, *args, **kwargs):
+    """Swagger view that explicitly bypasses any authentication checks"""
+    return schema_view.with_ui('swagger', cache_timeout=0)(request)
+
+@csrf_exempt  
+def public_redoc_view(request, *args, **kwargs):
+    """ReDoc view that explicitly bypasses any authentication checks"""
+    return schema_view.with_ui('redoc', cache_timeout=0)(request)
+    
+
 urlpatterns = [
     path('', home_view, name='home'),
     path('admin/', admin.site.urls),
     path('api/', include('listings.urls')),
-    path('swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
-    re_path(r'^swagger(?P<format>\.json|\.yaml)$', schema_view.without_ui(cache_timeout=0), name='schema-json'),
-    path('redoc/', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),
+    path('swagger/', public_swagger_view, name='schema-swagger-ui'),
+    path('redoc/', public_redoc_view, name='schema-redoc'),
 ]
 
 import logging
