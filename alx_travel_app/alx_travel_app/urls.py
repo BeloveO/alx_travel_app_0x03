@@ -78,19 +78,52 @@ schema_view = get_schema_view(
       description="API documentation for ALX Travel App",
    ),
    public=True,
-   permission_classes=(permissions.AllowAny,),
 )
 
+def external_swagger(request):
+    """Serve Swagger UI from external CDN"""
+    swagger_ui_html = f"""
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>ALX Travel App - API Documentation</title>
+        <link rel="stylesheet" type="text/css" href="https://unpkg.com/swagger-ui-dist@3/swagger-ui.css">
+        <style>
+            html {{ box-sizing: border-box; overflow: -moz-scrollbars-vertical; overflow-y: scroll; }}
+            *, *:before, *:after {{ box-sizing: inherit; }}
+            body {{ margin:0; background: #fafafa; }}
+        </style>
+    </head>
+    <body>
+        <div id="swagger-ui"></div>
+        <script src="https://unpkg.com/swagger-ui-dist@3/swagger-ui-bundle.js"></script>
+        <script>
+            window.onload = function() {{
+                window.ui = SwaggerUIBundle({{
+                    url: "{request.build_absolute_uri('/swagger.json')}",
+                    dom_id: '#swagger-ui',
+                    deepLinking: true,
+                    presets: [
+                        SwaggerUIBundle.presets.apis,
+                        SwaggerUIBundle.SwaggerUIStandalonePreset
+                    ],
+                    layout: "BaseLayout"
+                }});
+            }};
+        </script>
+    </body>
+    </html>
+    """
+    return HttpResponse(swagger_ui_html)
     
 
 urlpatterns = [
     path('', home_view, name='home'),
     path('admin/', admin.site.urls),
     path('api/', include('listings.urls')),
-    path('swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
+    path('swagger/', external_swagger),  # Use external Swagger UI
+    path('swagger.json', schema_view.without_ui(cache_timeout=0)),
     path('redoc/', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),
-    re_path(r'^swagger\.json$', schema_view.without_ui(cache_timeout=0), name='schema-json'),
-    re_path(r'^swagger\.yaml$', schema_view.without_ui(cache_timeout=0), name='schema-yaml'),
 ]
 
 import logging
