@@ -38,12 +38,11 @@ def home_view(request):
     </head>
     <body>
         <div class="container">
-            <h1>ALX Travel App Deployment Successful!</h1>
+            <h1>ALX Travel App Deployment</h1>
             <p>Django application running.</p>
             <div>
                 <a href="/admin/">Admin Panel</a>
                 <a href="/swagger/" target="_blank">Swagger UI</a>
-                <a href="/redoc/" target="_blank">ReDoc Documentation</a>
                 <a href="/api/">API Endpoints</a>
             </div>
         </div>
